@@ -34,3 +34,18 @@ a.social-icon {
 a.social-icon:visited {
     color: inherit;
 }
+
+.games{
+    width:60%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.game-img {
+ width: 50%;
+}
+
+.upstream-img{
+    width: 100%; 
+}
