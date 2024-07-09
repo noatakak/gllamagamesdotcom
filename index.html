@@ -3,9 +3,49 @@
 <head>
     <title>Gllama Games</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bd047f348b.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <p>Test</p>
+    <div class="main">
+        <div class="logo">
+            <img class="logo_img" src="media/gllama_pixel_logo.png" alt="Gllama Games">
+        </div>
+        <div class="socials">
+            <a class="social-icon fa-brands fa-tiktok" target="_blank" rel="noopener noreferrer" href="https://www.tiktok.com/@gllamagames/"></a>
+            <a class="social-icon fa-brands fa-instagram" target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/gllamagames/"></a>
+            <a class="social-icon fa-brands fa-threads" target="_blank" rel="noopener noreferrer" href="https://www.threads.net/@gllamagames"></a>
+            <a class="social-icon fa-brands fa-twitter" target="_blank" rel="noopener noreferrer" href="https://twitter.com/GllamaGames"></a>
+            <a class="social-icon fa-brands fa-youtube" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCL7EyyZYh7kUT1qS5YojboQ"></a>
+            <a class="social-icon fa-brands fa-bluesky" target="_blank" rel="noopener noreferrer" href="https://bsky.app/profile/gllamagames.bsky.social"></a>
+            <a class="social-icon fa-brands fa-discord" target="_blank" rel="noopener noreferrer" href="https://discord.gg/U9TVUuEWQA"></a>
+            <a class="social-icon fa-solid fa-envelope" target="_blank" rel="noopener noreferrer" href="mailto: gllamagames@gmail.com"></a>
+        </div>
+        <div class="games"></div>
+    </div>
+
+    <script>
+        var colors = ['red', 'yellow', 'green', 'cyan', 'blue', 'magenta'];
+
+        var icons = document.getElementsByClassName('social-icon');
+        for (var i = 0; i < icons.length; i++) {
+            icons[i].addEventListener('mouseover', function() {
+                this.style.color = getRandomColor();
+            });
+            icons[i].addEventListener('mouseout', function() {
+                this.style.color = 'black';
+            });
+            icons[i].addEventListener('mousedown', function() {
+                this.classList.add('border-on-click');
+            });
+            icons[i].addEventListener('mouseup', function() {
+                this.classList.remove('border-on-click');
+            });
+        }
+
+        function getRandomColor() {
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+    </script>
 </body>
 </html>
