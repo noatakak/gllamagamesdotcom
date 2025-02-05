@@ -1,3 +1,9 @@
+.main {
+    text-align: center; /* Centers child elements horizontally */
+    margin: 0;
+    padding: 0;
+}
+
 .logo {
     width:60%;
     margin-left: 20%;
@@ -48,9 +54,29 @@ a.social-icon:visited {
 }
 
 .game-img {
- width: 50%;
+    width: 50%;
 }
 
 .upstream-img{
     width: 100%; 
+}
+
+.bug-report-link {
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px; /* Large title size */
+    font-weight: 700; /* Bold text */
+    text-decoration: none;
+    color: #000000; /* Black text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Subtle shadow for readability */
+    display: inline-block; /* Allows box outline to surround text */
+    padding: 5px 10px; /* Tight padding for closer border */
+    border: 5px solid #000000; /* Thick black border */
+    border-radius: 10px; /* Smooth rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.bug-report-link:hover {
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8); /* Enhanced shadow for better readability */
+    transform: scale(1.1); /* Slightly enlarges the text and box */
 }
