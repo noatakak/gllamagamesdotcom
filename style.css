@@ -54,11 +54,11 @@ a.social-icon:visited {
 }
 
 .game-img {
-    width: 50%;
+    /* width: 50%; */
 }
 
 .upstream-img{
-    width: 100%; 
+    width: 50%; 
 }
 
 .bug-report-link {
