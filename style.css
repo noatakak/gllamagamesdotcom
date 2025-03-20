@@ -1,3 +1,7 @@
+body {
+    background-color: white;
+}
+
 .main {
     text-align: center; /* Centers child elements horizontally */
     margin: 0;
